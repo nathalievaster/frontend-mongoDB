@@ -15,16 +15,27 @@
         </nav>
       </header>
 
-  <form id="work-form">
-    <div id="error-message" style="color: red; margin-top: 10px;"></div>
-    <input type="text" name="company" placeholder="Företagsnamn"><br />
-    <input type="text" name="position" placeholder="Titel"><br />
-    <input type="date" name="startdate"><br />
-    <input type="date" name="enddate"><br />
-    <textarea name="description" placeholder="Beskrivning"></textarea><br />
-    <button type="submit">Spara</button>
-  </form>
-
+      <form id="work-form">
+        <div id="error-message" style="color: red; margin-top: 10px;"></div>
+      
+        <label for="company">Företagsnamn</label>
+        <input type="text" id="company" name="company" placeholder="Företagsnamn"><br />
+      
+        <label for="position">Titel</label>
+        <input type="text" id="position" name="position" placeholder="Titel"><br />
+      
+        <label for="startdate">Startdatum</label>
+        <input type="date" id="startdate" name="startdate"><br />
+      
+        <label for="enddate">Slutdatum (lämna tom om anställningen är pågående)</label>
+        <input type="date" id="enddate" name="enddate"><br />
+      
+        <label for="description">Beskrivning</label>
+        <textarea id="description" name="description" placeholder="Beskrivning"></textarea><br />
+      
+        <button type="submit">Spara</button>
+      </form>
+      
   <script src="js/add.js"></script>
 </body>
 </html>
