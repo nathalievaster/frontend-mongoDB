@@ -19,14 +19,40 @@
 
     <section>
         <p>
-            
+            Detta är en enkel och stilren frontend-applikation som konsumerar en
+            rest-webbtjänst som är byggd med Express, MongoDB och Mongoose. I
+            denna applikation ska man kunna lägga till, visa och radera sina
+            arbetserfarenheter.
         </p>
 
         <p><strong>Databasserver:</strong> MongoDB</p>
 
         <h2>Slutsatser</h2>
         <ul>
+            <li> I denna applikation har jag skrivit tydliga felmeddelanden vilka
+                visas direkt till användaren när input saknas i något av fälten.
+                I tidigare applikationer har jag bara satt <code>required</code>
+                direkt i HTML-koden, men jag har fått lära mig att användare själva
+                kan gå in i inspektera-läget och plocka bort dessa ur HTML-koden.
+                Att lägga detta i JavaScript-koden är därmed säkrare.
+            </li>
             <li>
+                Genom att kombinera validering i både frontend (för användarupplevelse)
+                och backend (för datasäkerhet) säkerställs att felaktig eller skadlig
+                data inte sparas. Detta gäller oavsett databas, men är särskilt
+                viktigt i MongoDB där datatyper inte är lika strikt definierade som i SQL.
+            </li>
+            <li>
+                När frontend-applikationen konsumerar en REST-webbtjänst, spelar
+                det egentligen ingen större roll vilket databas-system som ligger
+                bakom. Anrop via fetch, hantering av JSON, felhantering m.m. är identiskt
+                oavsett om det är MongoDB, PostgreSQL eller något annat. Det gör
+                frontend-utveckling flexibel och oberoende av backendens databasval.
+            </li>
+            <li>
+                Att bygga Create, Read, Update och Delete fungerar på ungefär samma sätt 
+                oavsett om man använder MongoDB eller PostgreSQL – det är bara syntaxen 
+                i backend som skiljer sig.
             </li>
         </ul>
     </section>
