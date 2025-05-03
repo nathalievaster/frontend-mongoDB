@@ -77,3 +77,17 @@ section, form, ul {
     margin: 0 auto;
     line-height: 1.8em;
 }
+
+.delete-btn {
+    margin-left: 1em;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #d32f2f;
+  }
